@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">LR-EARN</string>
+
+    <string name="title_section1">Log-In</string>
+    <string name="title_section2">Refer A Friend</string>
+    <string name="title_section3">My Money</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+    <string-array name="loanTypes">
+        <item>Home Loan</item>
+        <item>Vehicle Loan</item>
+        <item>Gold Loan</item>
+        <item>Property Loan</item>
+        <item>Personal Loan</item>
+        <item>Others</item>
+    </string-array>
+</resources>

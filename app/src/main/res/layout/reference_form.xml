@@ -1,0 +1,119 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:baselineAligned="false"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".referenceForm">
+
+    <TextView
+        android:layout_width="214dp"
+        android:layout_height="wrap_content"
+        android:text="Whom You want to Refer *"
+        android:id="@+id/refName"
+        android:layout_weight="0.03"
+        android:allowUndo="true"
+        android:inputType="textPersonName"
+        android:textStyle="bold|italic"
+        android:textColor="#910" />
+
+    <RadioButton
+        android:layout_width="59dp"
+        android:layout_height="wrap_content"
+        android:text="Mr."
+        android:id="@+id/radioButtonMr"
+        android:checked="true"
+        android:onClick="clearNameField"/>
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mrs"
+        android:id="@+id/radioButtonMrs"
+        android:checked="false"
+        android:onClick="clearNameField"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text|textPersonName"
+        android:text="Your friend who need help"
+        android:ems="10"
+        android:id="@+id/refNameText"
+        android:layout_weight="0.03"
+        android:allowUndo="true"
+        android:editable="true"
+        android:onClick="clearNameField"
+        android:enabled="true"
+        android:typeface="normal"
+        android:clickable="true"
+        android:breakStrategy="high_quality"
+        android:visibility="visible"
+        android:outlineProvider="paddedBounds"
+        android:autoText="true"
+        android:shadowColor="#fcffffff"
+        android:textStyle="italic"
+        android:textColor="#5a010101" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phone Number *"
+        android:id="@+id/refPhone"
+        android:layout_weight="0.03"
+        android:allowUndo="true"
+        android:inputType="textPersonName"
+        android:textStyle="bold|italic"
+        android:textColor="#910" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone|number"
+        android:ems="10"
+        android:id="@+id/refPhoneText"
+        android:layout_weight="0.03"
+        android:text="Phone Num"
+        android:allowUndo="true"
+        android:autoText="false"
+        android:clickable="true"
+        android:maxLength="10"
+        android:minLines="10"
+        android:phoneNumber="true"
+        android:onClick="clearNameField"
+        android:textColor="#5a060606" />
+    <TextView
+        android:layout_width="214dp"
+        android:layout_height="wrap_content"
+        android:text="Type of loan he/she interested *"
+        android:id="@+id/loanType"
+        android:layout_weight="0.03"
+        android:allowUndo="true"
+        android:textStyle="bold|italic"
+        android:textColor="#910"
+        android:inputType="none" />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loanOptions"
+        android:layout_weight="0.03"
+        android:spinnerMode="dropdown"
+        android:entries="@array/loanTypes"
+        android:focusableInTouchMode="true"
+        android:background="@android:drawable/btn_dropdown"
+        android:scrollIndicators="right"
+        android:textAlignment="gravity" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/sbmitRefForm"
+        android:layout_weight="0.03"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center|center_horizontal"
+        android:onClick="refFormData" />
+
+</LinearLayout>
